@@ -8,8 +8,7 @@ const Header = () => {
                 <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA5g0EupBwk1DdPljTmVBofqTfrecmMvEX7Q&usqp=CAU"
                     alt=""/>
-
-            <div>This is header</div>
+                <div>This is header</div>
             </div>
         </header>
 )
