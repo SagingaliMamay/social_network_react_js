@@ -1,0 +1,12 @@
+
+.content {
+  grid-area: content;
+  background-color: darkgray;
+
+}
+
+.content img {
+  width: 80%;
+  height: 20%;
+}
+

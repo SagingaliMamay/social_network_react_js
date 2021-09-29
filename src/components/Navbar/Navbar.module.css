@@ -1,0 +1,10 @@
+.navbar
+{
+  grid-area: navbar;
+  background-color: rgb(123, 155, 155);
+  margin-left: 10px;
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(20, 20, 20);
+}
+
