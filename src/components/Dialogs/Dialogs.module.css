@@ -1,7 +1,14 @@
-.dialog{
-color :red;
-background-color :blue;
+
+.dialogs{
+display:grid;
+grid-template-columns: 2fr 10fr;
 }
-.content{
-background-color :green;
+.dialogItems .dialog{
+
+}
+.messages{
+
+}
+.messages .message{
+
 }
