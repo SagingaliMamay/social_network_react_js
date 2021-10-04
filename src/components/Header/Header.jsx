@@ -10,7 +10,6 @@ const Header = () => {
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQySqSjkuHOm1R4Mi8aXrxp7ziUgPJThkM7VA&usqp=CAU"
           alt=""
         />
-        <div>This is header</div>
       
     </header>
   );

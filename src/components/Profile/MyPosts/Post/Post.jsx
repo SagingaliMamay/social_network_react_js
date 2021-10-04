@@ -1,13 +1,8 @@
 import React from "react";
 import style from './Post.module.css';
 
-const Post = (props) => {
-    var clicks = 50;
-function onClick() 
-{
-    clicks += 1;
-    document.getElementById("output").innerHTML = clicks;
-};
+const Post = (props) => { // I define props here
+
     return (
         
         <div className={style.item}>
@@ -24,5 +19,4 @@ function onClick()
         </div>
     )
 }
-
 export default Post;

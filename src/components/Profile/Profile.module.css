@@ -1,7 +1,7 @@
 
 .content {
   grid-area: content;
-  background-color: darkgray;
+  background-color: rgb(141, 145, 182);
 
 }
 
@@ -9,4 +9,3 @@
   width: 80%;
   height: 20%;
 }
-
