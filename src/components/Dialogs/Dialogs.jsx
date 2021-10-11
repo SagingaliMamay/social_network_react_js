@@ -29,8 +29,8 @@ const Dialogs = (props) => {
 
     {/*Refactoring dialogs data by using .map()*/}
 
-let dialogsElements = dialogsData.map( dialog => 
-    <DialogItem name={dialog.name} id={dialog.id} />
+let dialogsElements = dialogsData.map( dlg => 
+    <DialogItem name={dlg.name} id={dlg.id} />
 
     
 );
@@ -42,8 +42,8 @@ let dialogsElements = dialogsData.map( dialog =>
         {id:4,message:'I create my life!'},
         {id:5,message:'I am a game changer!'}]
 
-    let messagesElements = messageData.map(messages =>
-        <DialogItem name={messages.message} id={messages.id}/>
+    let messagesElements = messageData.map(msg =>
+        <DialogItem name={msg.message} id={msg.id}/>
         );
     return (
         <div className={style.dialogs}>
