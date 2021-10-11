@@ -26,6 +26,9 @@ const Dialogs = (props) => {
         {id:4,name:'Sasha'},
         {id:5,name:'Ivan'}
     ]
+
+    {/*Refactoring dialogs data by using .map()*/}
+
 let dialogsElements = dialogsData.map( dialog => 
     <DialogItem name={dialog.name} id={dialog.id} />
 
@@ -38,28 +41,24 @@ let dialogsElements = dialogsData.map( dialog =>
         {id:3,message:'I am extremly disciplined!'},
         {id:4,message:'I create my life!'},
         {id:5,message:'I am a game changer!'}]
+
+    let messagesElements = messageData.map(messages =>
+        <DialogItem name={messages.message} id={messages.id}/>
+        );
     return (
         <div className={style.dialogs}>
             <div className={style.dialogsItems}>
-            {    dialogsElements
-                /*[,
-                 <DialogItem name={dialogsData[1].name} id={dialogsData[1].id} />,
-                 <DialogItem name={dialogsData[2].name} id={dialogsData[2].id} />,
-                 <DialogItem name={dialogsData[3].name} id={dialogsData[3].id} />,
-                 <DialogItem name={dialogsData[4].name} id={dialogsData[4].id} />]
-            }
-                {/*<DialogItem name={dialogsData[0].name} id={dialogsData[0].id} />
-                
-                */}
+            {dialogsElements}
             </div>
-
+            
+            {/*Refactoring message data by using .map() */}
 
             <div className={style.messages}>
-                <Message message={messageData[0].message} id={messageData[0].id} />
-                <Message message={messageData[1].message} id={messageData[1].id} />
-                <Message message={messageData[2].message} id={messageData[2].id} />
-                <Message message={messageData[3].message} id={messageData[3].id} />
-                <Message message={messageData[4].message} id={messageData[4].id} />
+           
+            {/* Here I use .map() method: -> .map() run over messageData & signe into 
+            let message value from each element */}
+              
+              {messagesElements}
             </div>
         </div>
 
