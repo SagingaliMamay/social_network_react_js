@@ -9,7 +9,9 @@ import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import { BrowserRouter, Route } from "react-router-dom";
 
+{/*There is 2 way to render components: attr RENDER & COMPONENTS*/}
 
+let SomeComponent = () => <Profile/>;     
 
 function App() {
     return (
@@ -18,9 +20,9 @@ function App() {
                 <Header />
                 <Navbar />
                 <div className="app-wrapper-content">
-                    <Route path='/dialogs' component={Dialogs} />
-                    <Route path='/profile' component={Profile} />
-                    <Route path='/news' component={News} />
+                    <Route path='/dialogs' render={() => <Dialogs/>} />
+                    <Route path='/profile' component={SomeComponent} />
+                    <Route path='/news' render={() => <News/>} />
                     <Route path='/music' component={Music} />
                     <Route path='/settings' component={Settings} />
 
