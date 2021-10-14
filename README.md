@@ -1,2 +1,2 @@
-# It is social network build on React_JS
+# It is a social network build on React_JS
 
