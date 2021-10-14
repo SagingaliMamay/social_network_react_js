@@ -10,8 +10,8 @@ import Settings from "./components/Settings/Settings";
 import { BrowserRouter, Route } from "react-router-dom";
 
 {/*There is 2 way to render components: attr RENDER & COMPONENTS*/}
-
-   
+//1
+let SomeComponent = (props) => <Profile />;     
 
 
 function App(props) {
@@ -21,8 +21,8 @@ function App(props) {
             <div className="app-wrapper">
                 <Header />
                 <Navbar />
-                <div className="app-wrapper-content">
-                    <Route path='/dialogs' render={() => <Dialogs dialogsData={props.dialogsData} />} />
+                <div className="app-wrapper-content"> {/* 2 */}
+                    <Route path='/dialogs' render={() => <Dialogs dialogsData={props.dialogsData} messageData={props.messageData} />} />
                     <Route path='/profile' render = {() => <Profile postsData={props.postsData} />} />
                     <Route path='/news' render={() => <News/>} />
                     <Route path='/music' component={Music} />
