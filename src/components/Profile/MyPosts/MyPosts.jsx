@@ -5,7 +5,7 @@ import Post from './Post/Post';
 const MyPosts = (props) => {
     
 {/*Refactoring: posts data by .map()*/}
-     
+
     let postsElements = props.postsData.map( pst =>
     <Post message={pst.post} id={pst.id} likeCounter = {pst.likes} /> );
 

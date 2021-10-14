@@ -11,7 +11,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 {/*There is 2 way to render components: attr RENDER & COMPONENTS*/}
 
-let SomeComponent = (props) => <Profile />;     
+   
 
 
 function App(props) {
@@ -22,7 +22,7 @@ function App(props) {
                 <Header />
                 <Navbar />
                 <div className="app-wrapper-content">
-                    <Route path='/dialogs' render={() => <Dialogs/>} />
+                    <Route path='/dialogs' render={() => <Dialogs dialogsData={props.dialogsData} />} />
                     <Route path='/profile' render = {() => <Profile postsData={props.postsData} />} />
                     <Route path='/news' render={() => <News/>} />
                     <Route path='/music' component={Music} />

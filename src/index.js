@@ -11,10 +11,18 @@ let postsData = [
   {id:4,post:'Bla bla',likes:180},
   {id:5,post:'la la la ',likes:180}
 ];
+let dialogsData = [
+  {id:1,name:'Dimych'},
+  {id:2,name:'Lena'},
+  {id:3,name:'Igor'},
+  {id:4,name:'Sasha'},
+  {id:5,name:'Ivan'}
+]
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App postsData={postsData} />
+    <App postsData={postsData} dialogsData={dialogsData} />
   </React.StrictMode>,
   document.getElementById('root')
 );
